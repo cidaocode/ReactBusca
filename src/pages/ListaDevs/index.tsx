@@ -81,6 +81,7 @@ listarDesenvolvedores()
 
                                     return <li key={index}>
                                         <CardDev 
+                                        id={dev.id}
                                             foto={dev.user_img}
                                             nome={dev.nome}
                                             email={dev.email}
