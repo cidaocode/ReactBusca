@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import CardServicos from "../../components/cardServicos";
+import CardServicos from "../../components/CardServicos";
 import "./style.css"
 import api from "../../utils/api";
 
