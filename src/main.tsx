@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Route, Routes, BrowserRouter } from "react-router-dom"
 
+
 // import App from './App'
 import './index.css'
 import Home from './pages/Home'
@@ -11,6 +12,8 @@ import ListaServicos from './pages/ListaServicos'
 import Footer from './components/Footer'
 import PerfilUsuario from './pages/PerfilUsuario'
 import VisualizarServico from './pages/VisualizarServico'
+import CadastroUsuario from './pages/CadastroUsuario'
+import Login from './pages/Login'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -22,6 +25,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='listaservicos' element={ <ListaServicos /> } />
         <Route path='perfil/:idUsuario' element={ <PerfilUsuario/> }/>
         <Route path='visualizarServicos/:idServico' element={ <VisualizarServico/> }/>
+        <Route path='cadastrousuario' element={ <CadastroUsuario/> }/>
+        <Route path='login' element={ <Login/> } />
 
       </Routes>
       <Footer />      
